@@ -1,6 +1,6 @@
 # In-Memory Caching in ASP.NET Core
 
-<img src="https://github.com/Hendrik-de-Wet/Resources/blob/main/dot-net-core-in-memory-caching.png"/>
+<img src="https://github.com/Hendrik-de-Wet/dot-net-in-memory-caching/blob/main/dot-net-in-memory-caching/Resources/Images/dot-net-in-memory-caching.jpg"/>
 
 ## Introduction
 
