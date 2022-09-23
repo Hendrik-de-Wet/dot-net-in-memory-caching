@@ -1,4 +1,4 @@
-# In-Memory Caching in ASP.NET Core
+# In-Memory Caching in .NET
 
 <img src="https://github.com/Hendrik-de-Wet/dot-net-in-memory-caching/blob/main/dot-net-in-memory-caching/Resources/Images/dot-net-in-memory-caching.jpg"/>
 
