@@ -52,6 +52,9 @@ _memoryCache.Set(id, trail, cacheEntryOptions);
 
 ## Testing
 
-In order to test the In-Memory Caching, set a break point inside the GetTrail method in our GetTrailService.cs service and test the API end point via Postman / Swagger. Take note of the expiration timespan values whilst testing. Supply the Id parameter value e.g. 1 and watch as it reaches the service to retrieve the data.  Since the entry was not found in the cache, we proceed to fetch the data from the list. Do this again and you will notice the data is retrieved from the cache.
-
+Refer to the console output when testing the functionality.
+```
+dot_net_core_in_memory_caching.Controllers.TrailController: Information: Successfully retrieved information from data source for Id [1]
+dot_net_core_in_memory_caching.Controllers.TrailController: Information: Successfully stored information for Id [1] in In-memory cache.
+```
 
