@@ -35,6 +35,7 @@ namespace dot_net_core_in_memory_caching.Controllers
 
       if (_memoryCache.TryGetValue("trail", out Trail trail)) // Do not get information if it is already in In-Memory Cache. 
       {
+        _logger.LogInformation($"Successfully retrieved information from In-memory cache for Id [{Id}]");
         return Ok(trail);
       }
       else
@@ -46,6 +47,7 @@ namespace dot_net_core_in_memory_caching.Controllers
         .SetPriority(CacheItemPriority.Normal)
         .SetSize(1024);
         _memoryCache.Set(id, trail, cacheEntryOptions); // Add information to In-Memory Cache.
+        _logger.LogInformation($"Successfully stored information for Id [{Id}] in In-memory cache.");
         return Ok(trail);
       }
     }

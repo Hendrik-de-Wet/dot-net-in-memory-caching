@@ -53,11 +53,12 @@ namespace dot_net_core_in_memory_caching.Services
         // Select 
         Trail trail = new Trail();
         trail = trails.FirstOrDefault(x => x.Id == Id);
-
+        _logger.LogInformation($"Successfully retrieved information from data source for Id [{Id}]");
         return trail;
       }
       catch (Exception)
       {
+        _logger.LogInformation($"Error retrieving information from data source.");
         throw;
       }
     }
